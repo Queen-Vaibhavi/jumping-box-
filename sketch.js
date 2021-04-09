@@ -70,7 +70,7 @@ if(surface4.isTouching(box) && box.bounceOff(surface4)){
     
 //add condition for stop box.
     if(surface1.isTouching(box)){
-        box.shapeColor = color("purple");
+        box.shapeColor = rgb(128,0,128);
         box.setVelocity(0,0);
         music.stop();
             }
