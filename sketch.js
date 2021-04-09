@@ -45,20 +45,7 @@ background(rgb(169,169,169));
   
     drawSprites();
 
-//add condition to check if box touching surface and change color.
-if(surface1.isTouching(box) &&  box.bounceOff(surface1)){
-        box.shapeColor = color("purple");
-        box.bounceOff(surface1);
-        music.play();
-            }
-      
-//add condition for stp box.
-    if(surface1.isTouching(box)){
-        box.shapeColor = rgb(255,28,0);
-        box.setVelocity(0,0);
-        music.stop();
-            }
-
+//add condition to check if box touching surface and change color
 if(surface2.isTouching(box) && box.bounceOff(surface2)){
                 box.shapeColor = color("blue");
                 box.bounceOff(surface2);
@@ -80,7 +67,14 @@ if(surface4.isTouching(box) && box.bounceOff(surface4)){
                   melody.play();
                   music.stop();
 
+    
+//add condition for stop box.
+    if(surface1.isTouching(box)){
+        box.shapeColor = rgb(255,28,0);
+        box.setVelocity(0,0);
+        music.stop();
+            }
                                     }
             
                                        
-}
+}//function draw
