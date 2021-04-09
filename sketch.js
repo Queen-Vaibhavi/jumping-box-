@@ -48,6 +48,7 @@ background(rgb(169,169,169));
 //add condition to check if box touching surface and change color.
 if(surface1.isTouching(box) &&  box.bounceOff(surface1)){
         box.shapeColor = color("#6c0b99");
+        box.bounceOff(surface1);
         box.setVelocity(0,0);
         music.stop();
             }
