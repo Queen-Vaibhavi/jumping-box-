@@ -62,11 +62,10 @@ if(surface2.isTouching(box) && box.bounceOff(surface2)){
                             }
              
 if(surface4.isTouching(box) && box.bounceOff(surface4)){
-                  box.shapeColor = color("red");
+                  box.shapeColor = color("purple");
                   box.bounceOff(surface4);
                   melody.play();
                   music.stop();
-
     
 //add condition for stop box.
     if(surface1.isTouching(box)){
